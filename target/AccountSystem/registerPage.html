@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="registerPageStyle.css">
+    <title>Basic Register</title>
+</head>
+
+<body>
+    <div class="login-wrapper">
+        <form method="post" action="registerServlet" method="post" class="form">
+            <div class="button-box">
+                <div id="main-buttons"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Login</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <div class="input-group">
+                <input type="text" name="username" id="loginUser" required>
+                <label for="loginUser">Username</label>
+            </div>
+            <div class="input-group">
+                <input type="text" name="email" id="loginEmail" required>
+                <label for="loginEmail">Email</label>
+            </div>
+            <div class="input-group">
+                <input type="password" name="password" id="loginPassword" required>
+                <label for="loginPassword">Password</label>
+                <a href="loginPage.html" class="have-account">Have an account?</a>
+            </div>
+            <input type="submit" value="Register" class="submit-btn">
+        </form>
+    </div>
+
+        <script>
+            function login() {
+                window.location = "loginPage.html";
+            }
+
+            function register() {
+                window.location = "registerPage.html";
+            }
+        </script>
+</body>
+
+</html>

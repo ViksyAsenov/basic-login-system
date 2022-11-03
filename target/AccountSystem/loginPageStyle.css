@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #354F60;
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+.login-wrapper {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form {
+    position: relative;
+    width: 100%;
+    max-width: 380px;
+    padding: 80px 40px 40px;
+    background: #BC0E4C;
+    border-radius: 10px;
+    color: #ffffff;
+    box-shadow: 0 15px 25px #000000;
+}
+
+.button-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 220px;
+    top: -20px;
+    margin: 10px auto;
+    box-shadow: 0 15px 25px #000000;
+    border-radius: 10px;
+}
+
+.toggle-btn {
+    padding: 10px 30px;
+    cursor: pointer;
+    color: #ffffff;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+
+#main-buttons {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;    
+    background: #FFC501;
+    border-radius: 10px;
+}
+
+.form h2 {
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+    text-decoration: none;
+    color: #FFC501;
+}
+
+.form .input-group {
+    position: relative;
+}
+.form .input-group input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    outline: none;
+    background-color: transparent;
+    color: inherit;
+}
+.form .input-group label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: 0.4s ease-out;
+}
+.form .input-group input:focus + label,
+.form .input-group input:valid + label {
+    transform: translateY(-20px);
+    color: #FFC501;
+    font-size: .8rem;
+}
+.submit-btn {
+    display: block;
+    margin-top: 20px;
+    align-items: center;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    background: #FFC501;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.forgot-pw {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;    
+}
+
+.forgot-pw:hover {
+    color: #FFC501;
+    text-decoration: underline;
+}
+
+#forgot-pw {
+    position: absolute;
+    display: flex;
+    margin-left: 50px;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 50px;
+    height: 0;
+    z-index: 1;
+    background: #354F60;
+    opacity: 0;
+    transition: 0.6s ease-out;
+}
+#forgot-pw:target {
+    height: 100%;
+    opacity: 1;
+}
+
+.close {
+    position: absolute;
+    right: 1.5rem;
+    top: 0;
+    font-size: 2rem;
+    font-weight: 900;
+    text-decoration: none;
+    color: inherit;
+}
